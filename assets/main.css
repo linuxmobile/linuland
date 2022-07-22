@@ -16,29 +16,31 @@ body {
 
 header {
     width: 100vw;
-    height: 50px;
+    height: 10vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     background-color: var(--sea);
 }
 
 .logo {
-    height: 45px;
-}
-
-h1 {
-    text-align: center;
-    padding-left: 33.3%;
+    height: 40px;
+    padding: 5px;
 }
 
 nav {
-    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+ul {
 }
 
 li {
-    display: inline-block;
     list-style: none;
+    display: inline-block;
 }
 
 a {
