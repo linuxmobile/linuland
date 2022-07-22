@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    --dark: #2B3956;
+    --text: #E4EFF0;
+    --sky: #AFD0DB;
+    --sea: #4B7196;
+    --cherry: #E8464E;
+}
+
+body {
+    background-color: var(--dark);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sea);
+}
+
+.logo {
+    height: 45px;
+}
+
+h1 {
+    text-align: center;
+    padding-left: 33.3%;
+}
+
+nav {
+    height: 45px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+}
