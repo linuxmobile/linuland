@@ -95,7 +95,7 @@ a {
 .hero-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 60%;
     flex-direction: column;
 }
@@ -108,7 +108,10 @@ a {
 }
 
 .btn-hero {
-    margin-right: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .btn-hire {
@@ -118,7 +121,6 @@ a {
     border-radius: 20px;
     background-color: var(--avocado);
     margin-right: 32px;
-    margin-top: 20px;
 }
 
 .btn-empty {
