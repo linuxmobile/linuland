@@ -366,7 +366,7 @@ to {
     .scrollicon {
         position: absolute;
         width: 100vw;
-        bottom: 5%;
+        bottom: 10%;
     }
     .intro {
         margin-top: 70px;
