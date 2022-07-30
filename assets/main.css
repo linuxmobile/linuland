@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    --dark: #2B3956;
-    --text: #E4EFF0;
-    --sky: #AFD0DB;
-    --sea: #4B7196;
-    --cherry: #E8464E;
+    --dark: #233A48;
+    --white: #FAFAF6;
+    --text: #E5E3CE;
+    --text-dark: #23343F;
+    --avocado: #426E66;
+    --lime: #BED0A6;
+    --leave: #6C9585;
 }
 
 body {
@@ -16,33 +18,33 @@ body {
 
 header {
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--sea);
 }
 
 .logo {
     height: 40px;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
 }
 
 ul {
-    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
     list-style: none;
     display: inline-block;
-    padding: 0 10px;
+    margin: 20px;
 }
 
 a {
@@ -53,12 +55,57 @@ a {
     font-weight: 400;
 }
 
+.nav-btn {
+    width: 100px;
+    height: 35px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--avocado);
+    margin: 0 20px;
+}
+
+.nav-btn-text {
+    color: var(--white);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-svg {
+    position: relative;
+    width: 100vw;
+}
+
+.hero-container {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: orbitron, sans-serif;
+    font-weight: 900;
+    color: var(--leave);
+    font-size: 80px;
+}
+
 footer {
     width: 100vw;
     height: 6vh;
     font-family: josefin-sans, sans-serif;
     font-weight: 400;
-    color: var(--sky);
+    color: var(--text);
     text-align: center;
     padding-top: 100%;
 }
