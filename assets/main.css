@@ -59,7 +59,7 @@ a {
 
 .nav-btn {
     width: 100px;
-    height: 35px;
+    height: 30px;
     border-style: none;
     border-radius: 20px;
     background-color: var(--avocado);
@@ -97,6 +97,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 60%;
+    flex-direction: column;
 }
 
 .hero-title {
@@ -104,6 +105,34 @@ a {
     font-weight: 400;
     color: var(--leave);
     font-size: 80px;
+}
+
+.btn-hero {
+    margin-right: 60%;
+}
+
+.btn-hire {
+    width: 130px;
+    height: 30px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--avocado);
+    margin-right: 32px;
+    margin-top: 20px;
+}
+
+.btn-empty {
+    width: 130px;
+    height: 30px;
+    border-style: none;
+    border-radius: 20px;
+    border: solid 2px var(--avocado);
+    background-color: transparent;
+}
+
+.fa-empty {
+    color: var(--white);
+    padding: 5px;
 }
 
 .hero-code {
