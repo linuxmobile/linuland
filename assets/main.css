@@ -365,9 +365,12 @@ to {
     }
     .scrollicon {
         visibility: hidden;
+        height: 0px;
     }
     .intro {
-        margin-top: 0;
+        margin-top: 10px;
+        height: 30%;
+        z-index: 2;
     }
 }
 
