@@ -8,6 +8,7 @@
     --avocado: #426E66;
     --lime: #BED0A6;
     --leave: #6C9585;
+    --strong: abril-fatface, serif;
 }
 
 body {
@@ -75,16 +76,19 @@ a {
 }
 
 .hero-svg {
-    position: relative;
+    position: absolute;
     width: 100vw;
+    top: 8vh;
+    z-index: 1;
 }
 
 .hero-container {
-    position: absolute;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    margin: 60px;
 }
 
 .hero-content {
@@ -94,10 +98,17 @@ a {
 }
 
 .title {
-    font-family: orbitron, sans-serif;
-    font-weight: 900;
+    font-family: var(--strong);
+    font-weight: 400;
     color: var(--leave);
     font-size: 80px;
+}
+
+.hero-code {
+    background-color: var(--leave);
+    width: 600px;
+    height: 300px;
+    border-radius: 14px;
 }
 
 footer {
