@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 12vh;
     display: flex;
     justify-content: space-between;
@@ -78,13 +78,13 @@ a {
 
 .hero-svg {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 8vh;
     z-index: 1;
 }
 
 .hero-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ a {
 .hero-title {
     font-family: var(--strong);
     font-weight: 400;
-    color: var(--leave);
+    color: var(--lime);
     font-size: 80px;
 }
 
