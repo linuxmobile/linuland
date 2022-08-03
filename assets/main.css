@@ -373,10 +373,25 @@ to {
     }
 }
 
+@media (max-width: 1024px){
+    .intro {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 768px){
+    .intro {
+        margin-top: 90px;
+    }
+    .intro-desc {
+        padding: 100px;
+    }
+}
+
 @media (max-width: 480px) {
     header {
         width: 100%;
-        height: 7vh;
+        height: 12vh;
     }
     nav {
         display: flex;
@@ -423,8 +438,7 @@ to {
     }
 
     .nav-btn {
-        width: 40px;
-        height: 40px;
+        display: none;
     }
     .btn-hire {
         width: 70px;
@@ -466,4 +480,10 @@ to {
         display: none;
     }
 
+}
+
+@media (max-width: 375px){
+    .intro {
+        margin-top: 90px;
+    }
 }
