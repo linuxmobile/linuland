@@ -1,14 +1,16 @@
+/* Replace selection color 🕶️ */
 ::-moz-selection { /* Code for Firefox */
     background: #43685a;
-  }
-  
+  } 
   ::selection {
     background: #43685a;
   }
 
+/* General 🪄 */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     --dark: #233A48;
     --white: #FAFAF6;
     --text: #E5E3CE;
@@ -17,7 +19,6 @@
     --lime: #BED0A6;
     --leave: #6C9585;
     --strong: abril-fatface, serif;
-    box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
     height: 100vh;
 }
 
+/* Header content ✨ */
 header {
     width: 100%;
     height: 12vh;
@@ -80,6 +82,7 @@ a {
     color: var(--white);
 }
 
+/* Hero content 💎 */
 .hero {
     display: flex;
     justify-content: center;
@@ -241,6 +244,7 @@ strong {
     background-color: var(--text);
 }
 
+/* Intro section 🪄 */
 .__intro {
     display: flex;
     justify-items: center;
@@ -257,6 +261,7 @@ strong {
     padding: 200px;
 }
 
+/* Footer section 🎞️ */
 footer {
     width: 100%;
     height: 100%;
@@ -270,11 +275,12 @@ footer {
     padding-bottom: 10px;
 }
 
+
+/* From uiverse.io by @mrhyddenn 🖱️ */
 .scrollicon{
     display: flex;
     justify-content: center;
 }
-/* From uiverse.io by @mrhyddenn */
 
 .scrolldown {
     --color: white;
@@ -367,6 +373,8 @@ to {
     opacity: 0.5;
 }
 }
+
+/* Mediaqueries 🔮 */
 
 @media (max-width: 1150px) {
     .hero {
@@ -503,6 +511,8 @@ to {
         margin-top: 90px;
     }
 }
+
+/* For Fullpage.js ⚠️ */
 
 .section {
     width: 100%;

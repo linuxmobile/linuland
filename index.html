@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- ⚠️This html tag is needed to get fullpage.js working.⚠️ -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    <!-- Starting with content (div like: fullpage, section and intro are needed for fullpage.js) -->
     <div id="fullpage">
       <div class="section hero" id="section0">
         <div class="slide">
@@ -154,12 +156,19 @@
           </div>
         </div>
       </div>
+      <div class="section " id="section3">
+        <div class="slide">
+          <div class="intro">
+            <footer><p>made with 🥑 by linuxmobile</p></footer>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Adding Fullpagejs from: https://github.com/alvarotrigo/fullPage.js -->
     <script type="text/javascript" src="./js/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            anchors: ['Cover', 'Description', 'Why', 'Contact', 'Footer'],
             navigation: true,
             scrollingSpeed: 1700,
         });
