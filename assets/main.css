@@ -9,6 +9,7 @@
     --lime: #BED0A6;
     --leave: #6C9585;
     --strong: abril-fatface, serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 9999;
 }
 
 .logo {
@@ -226,32 +229,33 @@ strong {
     background-color: var(--text);
 }
 
-.intro {
+.__intro {
     display: flex;
     justify-items: center;
     align-items: center;
     width: 100%;
-    height: 50%;
 }
 
 .intro-desc {
-    padding: 200px;
     text-align: center;
-    margin-top: 100px;
     color: var(--leave);
     font-size: 40px;
     font-family: amatic-sc, sans-serif;
     font-weight: 400;
+    padding: 200px;
 }
 
 footer {
     width: 100%;
-    height: 6vh;
+    height: 100%;
     font-family: josefin-sans, sans-serif;
     font-weight: 400;
     color: var(--leave);
     text-align: center;
-    padding-top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
 }
 
 .scrollicon{
@@ -486,4 +490,36 @@ to {
     .intro {
         margin-top: 90px;
     }
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #426E66;
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/main.css">
     <link rel="shortcut icon" href="./assets/avocado.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./assets/fullpage.css" />
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/hiw3fcr.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -24,128 +24,145 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <div class="hero-svg">
-            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
-          .path-0{
-            animation:pathAnim-0 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-          }
-          @keyframes pathAnim-0{
-            0%{
-              d: path("M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z");
-            }
-            25%{
-              d: path("M 0,600 C 0,600 0,150 0,150 C 125.06666666666666,163.33333333333331 250.13333333333333,176.66666666666666 398,186 C 545.8666666666667,195.33333333333334 716.5333333333333,200.66666666666669 894,194 C 1071.4666666666667,187.33333333333331 1255.7333333333333,168.66666666666666 1440,150 C 1440,150 1440,600 1440,600 Z");
-            }
-            50%{
-              d: path("M 0,600 C 0,600 0,150 0,150 C 130.93333333333334,169.73333333333335 261.8666666666667,189.46666666666667 439,176 C 616.1333333333333,162.53333333333333 839.4666666666667,115.86666666666667 1014,106 C 1188.5333333333333,96.13333333333333 1314.2666666666667,123.06666666666666 1440,150 C 1440,150 1440,600 1440,600 Z");
-            }
-            75%{
-              d: path("M 0,600 C 0,600 0,150 0,150 C 193.06666666666666,178.8 386.1333333333333,207.6 545,204 C 703.8666666666667,200.4 828.5333333333333,164.4 972,150 C 1115.4666666666667,135.6 1277.7333333333333,142.8 1440,150 C 1440,150 1440,600 1440,600 Z");
-            }
-            100%{
-              d: path("M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z");
-            }
-          }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a4866"></stop><stop offset="95%" stop-color="#426e6666"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
-          .path-1{
-            animation:pathAnim-1 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-          }
-          @keyframes pathAnim-1{
-            0%{
-              d: path("M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z");
-            }
-            25%{
-              d: path("M 0,600 C 0,600 0,300 0,300 C 206.40000000000003,283.4666666666667 412.80000000000007,266.93333333333334 565,283 C 717.1999999999999,299.06666666666666 815.2,347.73333333333335 952,356 C 1088.8,364.26666666666665 1264.4,332.1333333333333 1440,300 C 1440,300 1440,600 1440,600 Z");
-            }
-            50%{
-              d: path("M 0,600 C 0,600 0,300 0,300 C 191.33333333333331,286.93333333333334 382.66666666666663,273.8666666666667 521,281 C 659.3333333333334,288.1333333333333 744.6666666666667,315.4666666666667 889,322 C 1033.3333333333333,328.5333333333333 1236.6666666666665,314.26666666666665 1440,300 C 1440,300 1440,600 1440,600 Z");
-            }
-            75%{
-              d: path("M 0,600 C 0,600 0,300 0,300 C 167.7333333333333,286.93333333333334 335.4666666666666,273.8666666666667 484,289 C 632.5333333333334,304.1333333333333 761.8666666666668,347.4666666666667 918,354 C 1074.1333333333332,360.5333333333333 1257.0666666666666,330.26666666666665 1440,300 C 1440,300 1440,600 1440,600 Z");
-            }
-            100%{
-              d: path("M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z");
-            }
-          }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a4888"></stop><stop offset="95%" stop-color="#426e6688"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><style>
-          .path-2{
-            animation:pathAnim-2 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-          }
-          @keyframes pathAnim-2{
-            0%{
-              d: path("M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z");
-            }
-            25%{
-              d: path("M 0,600 C 0,600 0,450 0,450 C 126,443.8666666666667 252,437.7333333333333 395,436 C 538,434.2666666666667 698,436.9333333333333 875,440 C 1052,443.0666666666667 1246,446.53333333333336 1440,450 C 1440,450 1440,600 1440,600 Z");
-            }
-            50%{
-              d: path("M 0,600 C 0,600 0,450 0,450 C 108.26666666666671,444.6666666666667 216.53333333333342,439.33333333333337 390,430 C 563.4666666666666,420.66666666666663 802.1333333333332,407.3333333333333 988,410 C 1173.8666666666668,412.6666666666667 1306.9333333333334,431.33333333333337 1440,450 C 1440,450 1440,600 1440,600 Z");
-            }
-            75%{
-              d: path("M 0,600 C 0,600 0,450 0,450 C 177.46666666666664,468.1333333333333 354.9333333333333,486.2666666666667 519,475 C 683.0666666666667,463.7333333333333 833.7333333333333,423.0666666666667 985,414 C 1136.2666666666667,404.9333333333333 1288.1333333333332,427.46666666666664 1440,450 C 1440,450 1440,600 1440,600 Z");
-            }
-            100%{
-              d: path("M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z");
-            }
-          }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a48ff"></stop><stop offset="95%" stop-color="#426e66ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <i>linux</i>. An autistic fullstack developer.</h1>
-                <div class="btn-hero">
-                  <button class="btn-hire"><a href="mailto:bdiez19@gmail.com">Hire me!</a></button>
-                  <button class="btn-empty"><i class="fa-empty fa-brands fa-github"><a class=fa-empty target="_blank" href="http://github.com/linuxmobile/linuland">Check repo</a></i></button>
-                </div>
+    <div id="fullpage">
+      <div class="section hero" id="section0">
+        <div class="slide">
+          <div class="intro">
+            <div class="hero-svg">
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+              .path-0{
+                animation:pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+              }
+              @keyframes pathAnim-0{
+                0%{
+                  d: path("M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z");
+                }
+                25%{
+                  d: path("M 0,600 C 0,600 0,150 0,150 C 125.06666666666666,163.33333333333331 250.13333333333333,176.66666666666666 398,186 C 545.8666666666667,195.33333333333334 716.5333333333333,200.66666666666669 894,194 C 1071.4666666666667,187.33333333333331 1255.7333333333333,168.66666666666666 1440,150 C 1440,150 1440,600 1440,600 Z");
+                }
+                50%{
+                  d: path("M 0,600 C 0,600 0,150 0,150 C 130.93333333333334,169.73333333333335 261.8666666666667,189.46666666666667 439,176 C 616.1333333333333,162.53333333333333 839.4666666666667,115.86666666666667 1014,106 C 1188.5333333333333,96.13333333333333 1314.2666666666667,123.06666666666666 1440,150 C 1440,150 1440,600 1440,600 Z");
+                }
+                75%{
+                  d: path("M 0,600 C 0,600 0,150 0,150 C 193.06666666666666,178.8 386.1333333333333,207.6 545,204 C 703.8666666666667,200.4 828.5333333333333,164.4 972,150 C 1115.4666666666667,135.6 1277.7333333333333,142.8 1440,150 C 1440,150 1440,600 1440,600 Z");
+                }
+                100%{
+                  d: path("M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z");
+                }
+              }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a4866"></stop><stop offset="95%" stop-color="#426e6666"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,150 0,150 C 184.66666666666669,168.66666666666666 369.33333333333337,187.33333333333331 545,198 C 720.6666666666666,208.66666666666669 887.3333333333333,211.33333333333337 1035,202 C 1182.6666666666667,192.66666666666663 1311.3333333333335,171.33333333333331 1440,150 C 1440,150 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+              .path-1{
+                animation:pathAnim-1 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+              }
+              @keyframes pathAnim-1{
+                0%{
+                  d: path("M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z");
+                }
+                25%{
+                  d: path("M 0,600 C 0,600 0,300 0,300 C 206.40000000000003,283.4666666666667 412.80000000000007,266.93333333333334 565,283 C 717.1999999999999,299.06666666666666 815.2,347.73333333333335 952,356 C 1088.8,364.26666666666665 1264.4,332.1333333333333 1440,300 C 1440,300 1440,600 1440,600 Z");
+                }
+                50%{
+                  d: path("M 0,600 C 0,600 0,300 0,300 C 191.33333333333331,286.93333333333334 382.66666666666663,273.8666666666667 521,281 C 659.3333333333334,288.1333333333333 744.6666666666667,315.4666666666667 889,322 C 1033.3333333333333,328.5333333333333 1236.6666666666665,314.26666666666665 1440,300 C 1440,300 1440,600 1440,600 Z");
+                }
+                75%{
+                  d: path("M 0,600 C 0,600 0,300 0,300 C 167.7333333333333,286.93333333333334 335.4666666666666,273.8666666666667 484,289 C 632.5333333333334,304.1333333333333 761.8666666666668,347.4666666666667 918,354 C 1074.1333333333332,360.5333333333333 1257.0666666666666,330.26666666666665 1440,300 C 1440,300 1440,600 1440,600 Z");
+                }
+                100%{
+                  d: path("M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z");
+                }
+              }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a4888"></stop><stop offset="95%" stop-color="#426e6688"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 191.2,304.26666666666665 382.4,308.53333333333336 528,309 C 673.6,309.46666666666664 773.5999999999999,306.1333333333333 918,304 C 1062.4,301.8666666666667 1251.2,300.93333333333334 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><style>
+              .path-2{
+                animation:pathAnim-2 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+              }
+              @keyframes pathAnim-2{
+                0%{
+                  d: path("M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z");
+                }
+                25%{
+                  d: path("M 0,600 C 0,600 0,450 0,450 C 126,443.8666666666667 252,437.7333333333333 395,436 C 538,434.2666666666667 698,436.9333333333333 875,440 C 1052,443.0666666666667 1246,446.53333333333336 1440,450 C 1440,450 1440,600 1440,600 Z");
+                }
+                50%{
+                  d: path("M 0,600 C 0,600 0,450 0,450 C 108.26666666666671,444.6666666666667 216.53333333333342,439.33333333333337 390,430 C 563.4666666666666,420.66666666666663 802.1333333333332,407.3333333333333 988,410 C 1173.8666666666668,412.6666666666667 1306.9333333333334,431.33333333333337 1440,450 C 1440,450 1440,600 1440,600 Z");
+                }
+                75%{
+                  d: path("M 0,600 C 0,600 0,450 0,450 C 177.46666666666664,468.1333333333333 354.9333333333333,486.2666666666667 519,475 C 683.0666666666667,463.7333333333333 833.7333333333333,423.0666666666667 985,414 C 1136.2666666666667,404.9333333333333 1288.1333333333332,427.46666666666664 1440,450 C 1440,450 1440,600 1440,600 Z");
+                }
+                100%{
+                  d: path("M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z");
+                }
+              }</style><defs><linearGradient id="gradient" x1="50%" y1="100%" x2="50%" y2="0%"><stop offset="5%" stop-color="#233a48ff"></stop><stop offset="95%" stop-color="#426e66ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,450 0,450 C 132.39999999999998,428.26666666666665 264.79999999999995,406.5333333333333 423,406 C 581.2,405.4666666666667 765.2,426.1333333333334 939,437 C 1112.8,447.8666666666666 1276.4,448.9333333333333 1440,450 C 1440,450 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
             </div>
-            <div class="hero-code">
-                <div class="card-code">
-                    <div class="code-bgnd">
-                      <p class="code-text">const <strong>lnx</strong> = {</p>
-                      <p class="code-text spc1">real.name: "<strong>Braian</strong>",</p>
-                      <p class="code-text spc1">pronouns: "he" | "his",</p>
-                      <p class="code-text spc1">learning: "<strong>Fullstack</strong>" | "MERN",</p>
-                      <p class="code-text spc1">techCommunity: {</p>
-                      <p class="code-text spc2"><i>organization:</i> "<strong>nucba</strong>",</p>
-                      <p class="code-text spc2"><i>speaker:</i> "<strong>Sebastian Bauer</strong>",</p>
-                      <p class="code-text spc2"><i>mentor:</i> "<strong>Albano 420</strong>",</p>
-                      <p class="code-text spc2">},</p>
-                      <p class="code-text spc1">challenge: "build a cute landing",</p>
-                      <p class="code-text">}</p>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm <i>linux</i>. An autistic fullstack developer.</h1>
+                    <div class="btn-hero">
+                      <button class="btn-hire"><a href="mailto:bdiez19@gmail.com">Hire me!</a></button>
+                      <button class="btn-empty"><i class="fa-empty fa-brands fa-github"><a class=fa-empty target="_blank" href="http://github.com/linuxmobile/linuland">Check repo</a></i></button>
                     </div>
                 </div>
-                <div class="card-color">
-                  <div class="color-blks">
-                    <div class="blk1"></div>
-                    <div class="blk2"></div>
-                    <div class="blk3"></div>
-                    <div class="blk4"></div>
-                    <div class="blk5"></div>
-                  </div>
+                <div class="hero-code">
+                    <div class="card-code">
+                        <div class="code-bgnd">
+                          <p class="code-text">const <strong>lnx</strong> = {</p>
+                          <p class="code-text spc1">real.name: "<strong>Braian</strong>",</p>
+                          <p class="code-text spc1">pronouns: "he" | "his",</p>
+                          <p class="code-text spc1">learning: "<strong>Fullstack</strong>" | "MERN",</p>
+                          <p class="code-text spc1">techCommunity: {</p>
+                          <p class="code-text spc2"><i>organization:</i> "<strong>nucba</strong>",</p>
+                          <p class="code-text spc2"><i>speaker:</i> "<strong>Sebastian Bauer</strong>",</p>
+                          <p class="code-text spc2"><i>mentor:</i> "<strong>Albano 420</strong>",</p>
+                          <p class="code-text spc2">},</p>
+                          <p class="code-text spc1">challenge: "build a cute landing",</p>
+                          <p class="code-text">}</p>
+                        </div>
+                    </div>
+                    <div class="card-color">
+                      <div class="color-blks">
+                        <div class="blk1"></div>
+                        <div class="blk2"></div>
+                        <div class="blk3"></div>
+                        <div class="blk4"></div>
+                        <div class="blk5"></div>
+                      </div>
+                    </div>
                 </div>
             </div>
+          </div>
         </div>
-    </section>
-    <div class="scrollicon">
-      <div class="scrolldown" style="--color: skyblue">
-        <div class="chevrons">
-            <div class="chevrondown"></div>
-            <div class="chevrondown"></div>
+      </div>
+      <div class="section __intro" id="section1">
+        <div class="slide">
+          <div class="intro">
+            <p class="intro-desc">
+              I am a programmer from Argentina with autism. 
+              I like to do fun and unique things with code, stand out from the crowd, 
+              and talk about what I like in the "blog" section. 
+              This is my portfolio where you will find many ideas
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="section " id="section2">
+        <div class="slide">
+          <div class="intro">
+            <footer><p>made with 🥑 by linuxmobile</p></footer>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    <section class="intro">
-      <p class="intro-desc">
-        I am a programmer from Argentina with autism. 
-        I like to do fun and unique things with code, stand out from the crowd, 
-        and talk about what I like in the "blog" section. 
-        This is my portfolio where you will find many ideas
-      </p>
-    </section>
-    <footer><p>made with 🥑 by linuxmobile</p></footer>
+    <!-- Adding Fullpagejs from: https://github.com/alvarotrigo/fullPage.js -->
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            navigation: true,
+            scrollingSpeed: 1700,
+        });
+    </script>
 </body>
 </html>
