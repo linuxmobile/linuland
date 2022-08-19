@@ -19,6 +19,9 @@
     --lime: #BED0A6;
     --leave: #6C9585;
     --strong: abril-fatface, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -33,8 +36,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 9999;
 }
 
 .logo {
@@ -93,7 +94,7 @@ a {
     position: absolute;
     width: 100%;
     top: 8vh;
-    z-index: 1;
+    z-index: 0;
 }
 
 .hero-container {
@@ -260,6 +261,98 @@ strong {
     font-weight: 400;
     padding: 200px;
 }
+
+/* Why should you choose me section 👑 */
+
+.why__background {
+    width: 100%;
+    height: 100%;
+}
+.why {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.why__left {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why__center {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why__right {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Left WHY section */
+.why__heading {
+    width: 80%;
+    font-family: var(--strong);
+    font-weight: 400;
+    color: var(--lime);
+    font-size: 80px;
+}
+
+.why__description {
+    width: 80%;
+    color: var(--text);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: raleway, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Card from why section styling */
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .card__A {
+    box-shadow: -20px 20px 0px -5px #6C9585;
+}
+
+.V1 {
+    background-color: #25201e;
+}
+
+.V2 {
+    background-color: #6C9585;
+}
+
+.V3 {
+    background-color: #23343F;
+}
+
+.V4 {
+    background-color: #BED0A6;
+} */
 
 /* Footer section 🎞️ */
 footer {
