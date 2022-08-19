@@ -36,6 +36,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 4;
 }
 
 .logo {
@@ -263,7 +265,6 @@ strong {
 }
 
 /* Why should you choose me section 👑 */
-
 .why__background {
     width: 100%;
     height: 100%;
