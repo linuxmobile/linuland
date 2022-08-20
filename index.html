@@ -226,9 +226,14 @@
     <script type="text/javascript" src="./js/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['Cover', 'Description', 'Why', 'Contact', 'Footer'],
+            anchors: ['Cover', 'Description', 'Why', 'Contact'],
             navigation: true,
             scrollingSpeed: 1700,
+            navigationTooltips: ['Cover', 'Description', 'Why', 'Contact'],
+            responsiveWidth: 900,
+            afterResponsive: function(isResponsive){
+
+            }
         });
     </script>
 </body>
