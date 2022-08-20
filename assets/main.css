@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
     --dark: #233A48;
     --white: #FAFAF6;
     --text: #E5E3CE;
@@ -671,29 +672,118 @@ to {
     .hero-title {
         font-size: 60px;
     }
-    .scrollicon {
-        display: none;
-        height: 0px;
-    }
-    .intro {
+    .hero-container {
         margin-top: 10px;
         height: 30%;
-        z-index: 2;
     }
 }
 
 @media (max-width: 1024px){
-    .intro {
-        margin-top: 90px;
-    }
-}
-
-@media (max-width: 768px){
-    .intro {
+    .hero-container {
         margin-top: 90px;
     }
     .intro-desc {
         padding: 100px;
+    }
+    .why {
+        padding: 10px;
+    }
+    .why__heading {
+        font-size: 60px;
+        width: 90%;
+    }
+    .why__description {
+        width: 90%;
+    }
+    .why .desc__links {
+        padding-left: 0;
+    }
+    .why img {
+        height: 30px;
+    }
+    .why ul {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-inline-start: 4%;
+    }
+    .why__center {
+        width: 50%;
+    }
+    .why__right {
+        width: 50%;
+    }
+    .card__A {
+        height: 60%;
+    }
+    .card__B {
+        height: 20%;
+    }
+    .card__headingB {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .hero-container {
+        margin-top: 90px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .hero-code {
+        width: 50%;
+    }
+    .intro-desc {
+        padding: 100px;
+    }
+    .why {
+        padding: 10px;
+    }
+    .why__heading {
+        font-size: 45px;
+        width: 95%;
+    }
+    .why__description {
+        width: 95%;
+    }
+    .why .desc__links {
+        padding-left: 0;
+    }
+    .why img {
+        height: 30px;
+    }
+    .why ul {
+        padding-inline-start: 4%;
+    }
+    .why__center {
+        width: 45%;
+    }
+    .why__right {
+        width: 50%;
+    }
+    .card__A {
+        height: 55%;
+    }
+    .card__B {
+        height: 25%;
+    }
+    .card__headingA {
+        font-size: 2em;
+    }
+    .card__headingB {
+        font-size: 25px;
+    }
+    .contact__heading {
+        font-size: 3.5em;
+    }
+    .contact__detail {
+        margin: 12px;
+        font-size: 12px;
+        width: 40%;
+    }
+    footer {
+        font-size: 10px;
     }
 }
 
@@ -706,7 +796,6 @@ to {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
     }
     .header-li {
         margin: 5px;
@@ -714,7 +803,6 @@ to {
     a {
         font-size: 12px;
     }
-
     .hero {
         display: flex;
         align-items: center;
@@ -722,7 +810,6 @@ to {
         flex-direction: column;
         width: 100%;
     }
-
     .hero-container {
         display: flex;
         align-items: center;
@@ -736,59 +823,75 @@ to {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 60px;
     }
     .hero-title {
         width: 100%;
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
     .btn-hero {
-        width: 100%;
+        display: none;
     }
 
     .nav-btn {
         display: none;
     }
-    .btn-hire {
-        width: 70px;
-        height: 40px;
-    }
-    .btn-empty{
-        width: 140px;
-        height: 40px;
-    }
-
     .hero-code {
         width: 100%;
         box-sizing: border-box;
     }
-
     .code-bgnd {
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 10px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.57);
     }
-
     .color-blks {
         width: 50%;
         left: 40%;
     }
-
-    .intro {
-        margin-top: 70px;
-    }
-
     .intro-desc {
-        padding: 10px;
+        padding: 20px;
     }
-    
-    .scrollicon {
+    .why {
+        flex-direction: column;
+    }
+    .why__left {
+        width: 100%;
+    }
+    .why__heading {
+        font-size: 20px;
+    }
+    .why__description {
+        font-size: 10px;
+    }
+    .why .desc__links {
+        padding: 0;
+    }
+    .why ul {
+        padding-inline-start: 20%;
+    }
+    .why__center {
+        width: 100%;
+    }
+    .card__btn {
         display: none;
     }
-
+    .why__right {
+        display: none;
+    }
+    .fp-overflow.fp-auto-height-responsive, .fp-overflow.fp-auto-height, .fp-overflow {
+        overflow-y: hidden;
+    }
+    .contact__left {
+        width: 100%;
+    }
+    .contact__right {
+        display: none;
+    }
 }
 
 @media (max-width: 375px){
