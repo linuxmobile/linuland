@@ -265,20 +265,17 @@ strong {
 }
 
 /* Why should you choose me section 👑 */
-.why__background {
-    width: 100%;
-    height: 100%;
-}
 .why {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background-color: #1b252c;
 }
 
 .why__left {
-    width: 49%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -287,7 +284,7 @@ strong {
 }
 
 .why__center {
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -296,7 +293,7 @@ strong {
 }
 
 .why__right {
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -309,7 +306,7 @@ strong {
     width: 80%;
     font-family: var(--strong);
     font-weight: 400;
-    color: var(--lime);
+    color: var(--leave);
     font-size: 80px;
 }
 
@@ -319,8 +316,26 @@ strong {
     font-size: 14px;
     letter-spacing: 1px;
     font-family: raleway, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
+}
+
+.why .desc__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.why ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.why img {
+    height: 50px;
 }
 
 /* Card from why section styling */
@@ -335,38 +350,214 @@ strong {
     flex-direction: column;
 }
 
-/* .card__A {
-    box-shadow: -20px 20px 0px -5px #6C9585;
+.card__A {
+    background: rgba(253, 255, 253, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(253, 255, 253, 0.39);
+    width: 85%;
+    height: 70%;
 }
 
-.V1 {
-    background-color: #25201e;
+.card__B {
+    background: rgba(66, 75, 56, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(66, 75, 56, 0.39);
+    width: 85%;
+    height: 30%;
 }
 
-.V2 {
-    background-color: #6C9585;
+.card__img {
+    margin: 20px 0;
 }
 
-.V3 {
-    background-color: #23343F;
+.card__headingA {
+    font-family: var(--strong);
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--text-dark);
+}
+.card__headingB {
+    font-family: var(--strong);
+    font-weight: 400;
+    font-size: 2.2em;
+    color: var(--text);
+    line-height: 1em;
+    margin-top: 10px;
 }
 
-.V4 {
-    background-color: #BED0A6;
-} */
+.card__description {
+    color: #cdd4d0;
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    font-size: 14px;
+    margin: 20px 0 ;
+}
+.card__diff {
+    color: #426e6649;
+}
+
+.card__btn {
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(--avocado);
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card_btn a {
+    font-family: josefin-sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+/* Contact Section 📞 */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact__left {
+    width: 60%;
+    height: 100%;
+    background-color: #1b252c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__right {
+    width: 40%;
+    height: 100%;
+    background-color: #426E66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__img {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact__img img {
+    position: absolute;
+    left: -40px;
+    height: 55%;
+}
+
+.contact__info {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__heading {
+    width: 50%;
+    font-family: var(--strong);
+    font-weight: 400;
+    color: var(--lime);
+    font-size: 5.5em;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.contact__detail {
+    width: 35%;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px;
+    text-transform: none;
+    color: #426e668f;
+}
+
+.contact__detail a {
+    text-transform: none;
+    color: #426e668f;
+    width: 40%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+input {
+    display: block;
+    width: 80%;
+    border: 1.2px solid #c6f0d9;
+    background-color: transparent;
+    padding: 20px;
+    color: #c6f0d9;
+}
+
+textarea {
+    width: 80%;
+    height: 20%;
+    border: 1.2px solid #c6f0d9;
+    background-color: transparent;
+    padding: 10px;
+    color: #c6f0d9;
+}
+
+.form__btn {
+    background-color: #233A48;
+    border-style: none;
+    width: 30%;
+    margin-left: 50%;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: #c6f0d9;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
 
 /* Footer section 🎞️ */
 footer {
     width: 100%;
-    height: 100%;
     font-family: josefin-sans, sans-serif;
     font-weight: 400;
-    color: var(--leave);
+    color: #426e664f;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 10px;
+    position: absolute;
+    bottom: 5px;
 }
 
 
