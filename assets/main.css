@@ -1,6 +1,16 @@
+/* Replace selection color 🕶️ */
+::-moz-selection { /* Code for Firefox */
+    background: #43685a;
+  } 
+  ::selection {
+    background: #43685a;
+  }
+
+/* General 🪄 */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     --dark: #233A48;
     --white: #FAFAF6;
     --text: #E5E3CE;
@@ -9,6 +19,9 @@
     --lime: #BED0A6;
     --leave: #6C9585;
     --strong: abril-fatface, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -16,16 +29,19 @@ body {
     height: 100vh;
 }
 
+/* Header content ✨ */
 header {
     width: 100%;
     height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 4;
 }
 
 .logo {
-    height: 40px;
+    height: 80px;
     padding: 20px;
     filter: drop-shadow(1px 1px 5px var(--text));
 }
@@ -69,6 +85,7 @@ a {
     color: var(--white);
 }
 
+/* Hero content 💎 */
 .hero {
     display: flex;
     justify-content: center;
@@ -79,7 +96,7 @@ a {
     position: absolute;
     width: 100%;
     top: 8vh;
-    z-index: 1;
+    z-index: 0;
 }
 
 .hero-container {
@@ -142,6 +159,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .code-bgnd {
@@ -226,39 +247,325 @@ strong {
     background-color: var(--text);
 }
 
-.intro {
+/* Intro section 🪄 */
+.__intro {
     display: flex;
     justify-items: center;
     align-items: center;
     width: 100%;
-    height: 50%;
 }
 
 .intro-desc {
-    padding: 200px;
     text-align: center;
-    margin-top: 100px;
     color: var(--leave);
     font-size: 40px;
     font-family: amatic-sc, sans-serif;
     font-weight: 400;
+    padding: 200px;
 }
 
-footer {
+/* Why should you choose me section 👑 */
+.why {
     width: 100%;
-    height: 6vh;
-    font-family: josefin-sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #1b252c;
+}
+
+.why__left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why__center {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why__right {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Left WHY section */
+.why__heading {
+    width: 80%;
+    font-family: var(--strong);
     font-weight: 400;
     color: var(--leave);
-    text-align: center;
-    padding-top: 100%;
+    font-size: 80px;
 }
 
+.why__description {
+    width: 80%;
+    color: var(--text);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.why .desc__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.why ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.why img {
+    height: 50px;
+}
+
+/* Card from why section styling */
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__A {
+    background: rgba(253, 255, 253, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(253, 255, 253, 0.39);
+    width: 85%;
+    height: 70%;
+}
+
+.card__B {
+    background: rgba(66, 75, 56, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(66, 75, 56, 0.39);
+    width: 85%;
+    height: 30%;
+}
+
+.card__img {
+    margin: 20px 0;
+}
+
+.card__headingA {
+    font-family: var(--strong);
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--text-dark);
+}
+.card__headingB {
+    font-family: var(--strong);
+    font-weight: 400;
+    font-size: 2.2em;
+    color: var(--text);
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+.card__description {
+    color: #cdd4d0;
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    font-size: 14px;
+    margin: 20px 0 ;
+}
+.card__diff {
+    color: #426e6649;
+}
+
+.card__btn {
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(--avocado);
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card_btn a {
+    font-family: josefin-sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+/* Contact Section 📞 */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact__left {
+    width: 60%;
+    height: 100%;
+    background-color: #1b252c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__right {
+    width: 40%;
+    height: 100%;
+    background-color: #426E66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__img {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact__img img {
+    position: absolute;
+    left: -40px;
+    height: 55%;
+}
+
+.contact__info {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__heading {
+    width: 50%;
+    font-family: var(--strong);
+    font-weight: 400;
+    color: var(--lime);
+    font-size: 5.5em;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.contact__detail {
+    width: 35%;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px;
+    text-transform: none;
+    color: #426e668f;
+}
+
+.contact__detail a {
+    text-transform: none;
+    color: #426e668f;
+    width: 40%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+input {
+    display: block;
+    width: 80%;
+    border: 1.2px solid #c6f0d9;
+    background-color: transparent;
+    padding: 20px;
+    color: #c6f0d9;
+}
+
+textarea {
+    width: 80%;
+    height: 20%;
+    border: 1.2px solid #c6f0d9;
+    background-color: transparent;
+    padding: 10px;
+    color: #c6f0d9;
+}
+
+.form__btn {
+    background-color: #233A48;
+    border-style: none;
+    width: 30%;
+    margin-left: 50%;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: #c6f0d9;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+/* Footer section 🎞️ */
+footer {
+    width: 100%;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    color: #426e664f;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+
+/* From uiverse.io by @mrhyddenn 🖱️ */
 .scrollicon{
     display: flex;
     justify-content: center;
 }
-/* From uiverse.io by @mrhyddenn */
 
 .scrolldown {
     --color: white;
@@ -351,6 +658,8 @@ to {
     opacity: 0.5;
 }
 }
+
+/* Mediaqueries 🔮 */
 
 @media (max-width: 1150px) {
     .hero {
@@ -486,4 +795,38 @@ to {
     .intro {
         margin-top: 90px;
     }
+}
+
+/* For Fullpage.js ⚠️ */
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #426E66;
 }
